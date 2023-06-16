@@ -641,7 +641,6 @@ function swapHeadAndTail(arr) {
       (Math.floor(arr.length / 2)) + 1,
     ).concat([middle]).concat(arr.slice(0, Math.floor(arr.length / 2)));
   }
-  console.log(arr.length);
   return arr.slice((Math.floor(arr.length / 2))).concat(arr.slice(0, Math.floor(arr.length / 2)));
 }
 
