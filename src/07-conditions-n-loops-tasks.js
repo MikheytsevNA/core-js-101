@@ -316,12 +316,10 @@ function getDigitalRoot(num) {
     return (number).toString().split('').reduce((accumulator, value) => +accumulator + +value, 0);
   }
   let returnNum = num;
-  while (true) {
-    if (returnNum < 10) {
-      return returnNum;
-    }
+  while (returnNum >= 10) {
     returnNum = summOfDigitsNumber(returnNum);
   }
+  return returnNum;
 }
 
 
